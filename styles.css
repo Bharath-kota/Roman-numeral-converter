@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-color: #E8FCCF;
+  font-family: verdana;
+}
+
+h1 {
+  font-family: Times-New-Roman;
+  color: #397E11;
+  text-align: center;
+  margin: 20px
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+main {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#calc-container {
+  width: 80vw;
+  height: 40vh;
+  background-color: #D6F6CA;
+  border: 3px solid #2B5D0E;
+  border-radius: 20px;  
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width:500px;
+  padding: 10px
+}
+
+#s-heading {
+  color: #134611;
+  font-size: 2rem;
+  margin: 10px;
+  text-align: center
+}
+
+#number {
+  width: 70%;
+  height: 20%;
+  border-radius: 15px;
+  padding: 15px;
+  font-size: 2rem;
+  border: 2px solid #2B5D0E;
+  background-color: #E9FCD4;
+  margin: 10px;
+}
+
+#number:focus {
+  outline: none;
+  border: 3px solid #2B5D0E;
+  box-shadow: 5px 5px 10px #2B5D0E;
+}
+
+#convert-btn{
+  width:70%;
+  height: 20%;
+  border-radius: 15px;
+  background-color: #9AE37D;
+  border: 2px solid #1D3C07;
+  font-size: 2rem;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center
+
+}
+
+#convert-btn:active {
+  box-shadow: 2px 2px 5px #1D3C07;
+}
+
+#output {
+  font-size: 2.5rem;
+  color: #1D3C07;
+  text-align: center;
+  margin: 10px
+}
+
+@media only screen and (max-height: 490px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 392px) {
+  
+  #s-heading, #number, #convert-btn {
+    margin: 5px
+  }
+}
+
+@media only screen and (max-height: 440px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-height: 410px) {
+  html {
+    font-size: 12px;
+  }
+  #s-heading, #number, #convert-btn {
+    margin: 5px
+  }
+}
+
+@media only screen and (max-height: 370px)  {
+  html {
+    font-size: 10px;
+  }
+  #s-heading, #number, #convert-btn {
+    margin: 2px
+  }
+}
