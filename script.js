@@ -14,6 +14,12 @@ const convert = num => {
   } else if (parseInt(num) === 420){
     return "Wow you're so funny, are'nt ya?";
   }
+  else if (parseInt(num) === 9){
+    return "IX(All will return to nihility)";
+  }
+  else if (parseInt(num) === 50){
+    return "L(ily)";
+  }
   const reference = [
   ["M",1000],
   ["CM",900],
